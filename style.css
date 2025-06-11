@@ -1,0 +1,110 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Hero Section Styles */
+.hero {
+  /* Intel blue background */
+  background-color: #0071c5; /* Intel brand blue */
+  width: 100%;
+  min-height: 60vh; /* Makes hero section tall on all screens */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  padding: 40px 10px; /* Padding for mobile responsiveness */
+  box-sizing: border-box;
+}
+
+.hero-content {
+  text-align: center; /* Center text and logo */
+  color: #fff; /* White text for contrast */
+  font-family: 'Roboto', Arial, sans-serif; /* Modern typography */
+}
+
+.hero-logo {
+  width: 120px; /* Set logo size */
+  margin-bottom: 20px; /* Space below logo */
+}
+
+.hero-title {
+  font-size: 2.2rem; /* Large, bold headline */
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 40vh;
+    padding: 24px 5px;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .hero-logo {
+    width: 80px;
+  }
+}
+
+/* Timeline container styles */
+.timeline {
+  /* Use flexbox to arrange cards in a row */
+  display: flex;
+  flex-direction: row;
+  gap: 16px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 24px 0; /* Space above and below timeline */
+  scroll-snap-type: x mandatory; /* Snap cards into place when scrolling */
+}
+
+/* Each card styles */
+.card {
+  /* Make cards the same width */
+  min-width: 260px;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 16px;
+  scroll-snap-align: start; /* Snap each card to the start */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  margin-bottom: 8px;
+  transition: 
+    transform 0.2s ease, /* Smoothly scale up */
+    box-shadow 0.2s ease; /* Smoothly change shadow */
+}
+
+/* Make images fit the card */
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* When the user hovers over a card */
+.card:hover {
+  transform: scale(1.04); /* Make the card a little bigger */
+  box-shadow: 0 6px 24px rgba(0, 113, 197, 0.15); /* Add a soft blue shadow */
+}
+
+/* Responsive: stack cards vertically on small screens */
+@media (max-width: 700px) {
+  .timeline {
+    flex-direction: column; /* Stack cards vertically */
+    overflow-x: visible; /* No horizontal scroll */
+    gap: 20px;
+  }
+  .card {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
