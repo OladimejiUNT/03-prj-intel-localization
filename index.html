@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- 
+  Set the language to Arabic (ar) and the direction to right-to-left (rtl).
+  This helps browsers display the page correctly for Arabic readers.
+-->
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intel: Sustainability Through the Ages</title>
+  <!-- The page title is now in Arabic -->
+  <title>إنتل: الاستدامة عبر العصور</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap RTL CSS for right-to-left support -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons for using icon fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -12,16 +23,14 @@
   <header class="hero">
     <div class="hero-content">
       <!-- Intel Logo centered -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" class="hero-logo" />
-      <!-- Main Heading -->
+      <img src="img/intel-header-logo.svg" alt="شعار إنتل" class="hero-logo" />
+      <!-- Main Heading in Arabic -->
       <h1 class="hero-title">
-        SUSTAINABILITY THROUGH THE AGES
+        الاستدامة عبر العصور
       </h1>
-      <!-- Subheading / Description -->
+      <!-- Subheading / Description in Arabic -->
       <p class="hero-subtitle">
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
+        اكتشف رحلة إنتل عبر الزمن، وتعرّف كيف ساهم التزامنا بالابتكار في بناء مستقبل أكثر استدامة للتقنية وكوكبنا.
       </p>
     </div>
   </header>
@@ -32,104 +41,169 @@
 
     <!-- Each milestone card gets a class "card" -->
     <div class="card">
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Placeholder Image" />
+      <h2>١٩٦٨</h2>
+      <h3>تأسيس إنتل</h3>
+      <!-- Descriptive alt text in Arabic -->
+      <img src="img/1.jpg" alt="تأسيس شركة إنتل عام ١٩٦٨" />
       <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
+        روبرت نويس وجوردون مور يغيران اسم الشركة الجديدة من NM Electronics إلى شركة إنتل، ليضعا الأساس لعقود من الابتكار التقني.
       </p>
     </div>
 
     <div class="card">
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Placeholder Image" />
+      <h2>١٩٧١</h2>
+      <h3>أول معالج دقيق</h3>
+      <img src="img/2.jpg" alt="أول معالج دقيق من إنتل عام ١٩٧١" />
       <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
+        إنتل تطلق 4004، أول معالج دقيق تجاري في العالم، مما أشعل ثورة المعالجات الدقيقة ودفع مستقبل أجهزة الحاسوب.
       </p>
     </div>
 
     <div class="card">
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Placeholder Image" />
+      <h2>١٩٧٨</h2>
+      <h3>معالج 8086</h3>
+      <img src="img/3.jpg" alt="معالج إنتل 8086 عام ١٩٧٨" />
       <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
+        إطلاق معالج 8086، الذي أسس معمارية x86 التي تشغل العديد من الحواسيب والخوادم في العصر الحديث.
       </p>
     </div>
 
     <div class="card">
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Placeholder Image" />
+      <h2>١٩٨٥</h2>
+      <h3>معالج 386</h3>
+      <img src="img/4.jpg" alt="معالج إنتل 386 عام ١٩٨٥" />
       <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
+        إنتل تقدم معالج 386 بمعمارية ٣٢ بت، مما أتاح أداءً أفضل وقدرات تعدد المهام لأجهزة الحاسوب الشخصية.
       </p>
     </div>
 
     <div class="card">
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <img src="img/2006 Intel.jpg" alt="2006 Image" />
+      <h2>٢٠٠٦</h2>
+      <h3>ذروة انبعاثات الغازات الدفيئة</h3>
+      <img src="img/2006 Intel.jpg" alt="ذروة انبعاثات الغازات الدفيئة في إنتل عام ٢٠٠٦" />
       <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
+        شهد هذا العام أعلى انبعاثات سنوية للغازات الدفيئة في عمليات إنتل. في السنوات التالية، استثمرت الشركة في تقنيات صديقة للبيئة والطاقة المتجددة وتحسين كفاءة التصنيع.
       </p>
     </div>
 
     <div class="card">
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <img src="img/2020 Intel.jpg" alt="2020 Image" />
+      <h2>٢٠٢٠</h2>
+      <h3>استراتيجية RISE</h3>
+      <img src="img/2020 Intel.jpg" alt="إطلاق استراتيجية RISE في إنتل عام ٢٠٢٠" />
       <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
+        أطلقت إنتل استراتيجية RISE (المسؤولية، الشمول، الاستدامة، التمكين) وأهداف ٢٠٣٠ لدفع التقدم في العمل المناخي والحفاظ على المياه وتقليل النفايات.
       </p>
     </div>
 
     <div class="card">
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <img src="img/2022 Intel.jpg" alt="2022 Image" />
+      <h2>٢٠٢٢</h2>
+      <h3>صفر انبعاثات بحلول ٢٠٤٠</h3>
+      <img src="img/2022 Intel.jpg" alt="إعلان إنتل عن التزامها بصفر انبعاثات عام ٢٠٢٢" />
       <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
+        أعلنت إنتل التزامها بتحقيق صفر انبعاثات غازات دفيئة (النطاق ١ و٢) في عملياتها العالمية بحلول عام ٢٠٤٠، استكمالاً لمبادرات بيئية سابقة.
       </p>
     </div>
 
     <div class="card">
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <img src="img/2023 Intel.jpg" alt="2023 Image" />
+      <h2>٢٠٢٣</h2>
+      <h3>الكهرباء المتجددة</h3>
+      <img src="img/2023 Intel.jpg" alt="استخدام الكهرباء المتجددة في إنتل عام ٢٠٢٣" />
       <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
+        حققت الشركة استخدام ٩٩٪ من الكهرباء المتجددة عالمياً، مما ساعد في تقليل الانبعاثات الكربونية ودعم أهداف الاستدامة طويلة المدى.
       </p>
     </div>
 
     <div class="card">
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <img src="img/2024 Intel.jpg" alt="2024 Image" />
+      <h2>٢٠٢٤</h2>
+      <h3>قمة الاستدامة</h3>
+      <img src="img/2024 Intel.jpg" alt="قمة الاستدامة الأولى لشركة إنتل عام ٢٠٢٤" />
       <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
+        استضافت إنتل أول قمة استدامة لها، وجمعت الموردين والمسؤولين الحكوميين وقادة الصناعة للتعاون في تصنيع أشباه الموصلات المستدامة.
       </p>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  <p>مرر للاطلاع على الخط الزمني | مرر المؤشر على البطاقات لمعرفة المزيد!</p>
+
+  <!-- Responsive three-column section using Bootstrap grid -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- First column -->
+      <div class="col-md-4 mb-3">
+        <!-- Icon using Bootstrap Icons -->
+        <div class="text-center mb-2">
+          <i class="bi bi-globe2" style="font-size: 2rem;"></i>
+        </div>
+        <!-- Heading -->
+        <h4 class="text-center">الاستدامة البيئية</h4>
+        <!-- Short paragraph -->
+        <p class="text-center">
+          نلتزم بحماية البيئة من خلال تقنيات صديقة للطبيعة واستخدام الطاقة المتجددة.
+        </p>
+        <!-- Learn More button -->
+        <div class="text-center">
+          <a href="#" class="btn btn-primary">اعرف المزيد</a>
+        </div>
+      </div>
+      <!-- Second column -->
+      <div class="col-md-4 mb-3">
+        <div class="text-center mb-2">
+          <i class="bi bi-people-fill" style="font-size: 2rem;"></i>
+        </div>
+        <h4 class="text-center">المسؤولية المجتمعية</h4>
+        <p class="text-center">
+          نعمل على دعم المجتمعات المحلية وتعزيز التنوع والشمول في بيئة العمل.
+        </p>
+        <div class="text-center">
+          <a href="#" class="btn btn-primary">اعرف المزيد</a>
+        </div>
+      </div>
+      <!-- Third column -->
+      <div class="col-md-4 mb-3">
+        <div class="text-center mb-2">
+          <i class="bi bi-lightbulb-fill" style="font-size: 2rem;"></i>
+        </div>
+        <h4 class="text-center">الابتكار المستدام</h4>
+        <p class="text-center">
+          نبتكر حلولاً جديدة تساهم في بناء مستقبل أكثر استدامة للجميع.
+        </p>
+        <div class="text-center">
+          <a href="#" class="btn btn-primary">اعرف المزيد</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Subscription Form -->
+  <!-- This form lets users enter their email and subscribe to updates -->
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <!-- Form starts here -->
+        <form class="text-center">
+          <!-- Label for the email input -->
+          <label for="newsletter-email" class="form-label mb-2">اشترك في النشرة البريدية</label>
+          <!-- Email input field -->
+          <input type="email" class="form-control mb-2" id="newsletter-email" placeholder="أدخل بريدك الإلكتروني" required>
+          <!-- Subscribe button -->
+          <button type="submit" class="btn btn-success">اشترك</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section starts here -->
+  <footer class="mt-4 py-3 bg-light">
+    <div class="container">
+      <!-- Use text-center to center the content -->
+      <div class="text-center">
+        <!-- Copyright text -->
+        <p class="mb-1">&copy; 2025 إنتل. جميع الحقوق محفوظة.</p>
+        <!-- Placeholder links -->
+        <a href="#" class="mx-2">سياسة الخصوصية</a>
+        <a href="#" class="mx-2">الشروط والأحكام</a>
+        <a href="#" class="mx-2">اتصل بنا</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

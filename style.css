@@ -108,3 +108,38 @@
     max-width: 100%;
   }
 }
+
+/* 
+  Custom CSS for RTL layout improvements and Bootstrap adjustments.
+  These styles help make sure the page looks good in right-to-left mode.
+*/
+
+/* Make sure text in timeline cards is right-aligned for Arabic */
+.timeline, .timeline .card {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Ensure Bootstrap buttons and form controls are RTL-friendly */
+body, input, button, label, textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Adjust placeholder text alignment in inputs for RTL */
+input[type="email"]::placeholder {
+  text-align: right;
+}
+
+/* Footer links spacing for RTL (optional, since Bootstrap handles mx-2 well) */
+footer a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Responsive: center newsletter form on small screens */
+@media (max-width: 600px) {
+  form.text-center {
+    text-align: right;
+  }
+}
